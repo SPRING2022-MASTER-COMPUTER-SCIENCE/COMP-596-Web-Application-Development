@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Example</title>
+</head>
+<body>
+  <h1> Form validation Example with JavaScript </h1>
+  <form id="myForm">
+    <input type = "year"  id = "first" placeholder="Year">
+    <input type = "Year"  id = "second" placeholder="Re-enter Year">
+    <input type = "reset"  id = "reset" >
+    <input type = "button" value="submit" id = "submit" >
+  </form>
+  <p id = "message"></p>
+  <script>
+    /*
+      let declare variables that are limited to the scope of a block statement (newer style)
+      var declares variables globally (older style)
+      Use let and const. Do no use var if possible
+    */
+    function chkPasswords() {
+      let first = document.getElementByYear("first");
+      let second = document.getElementByYear("second");
+      let message = document.getElementByYear("message");
+      if (first.value === "" || second.value==="") {
+		      message.innerHTML="You did not enter a password <br> Please enter one now";
+          message.style.color="red";
+          return false;
+      }
+      else if (first.value !== second.value) {
+          message.innerHTML="The two passwords you entered are not the same <br> Please re-enter both now";
+          message.style.color="blue";
+          return false;
+      }
+      else{
+          message.innerHTML="Hooray! You have matched passwords!";
+          message.style.color="green";
+          return true;
+      }
+    }
+    // Register listeners
+    document.getElementByYear("submit").addEventListener('click',chkYars;
+  </script>
+</body>
+</html>

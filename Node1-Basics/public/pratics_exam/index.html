@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Pratics Exam</title>
+</head>
+<body>
+  <h1> Display a calendar </h1>
+  <form calander="myForm">
+    <input type = "year"  Year = "first" placeholder="Year">
+    <input type = "Month"  Month = "second" placeholder="Re-enter Month">
+    <input type = "Day"  Day = "third" placeholder="Day">
+    <input type = "week" week="thursday" placeholder = "week" >
+  </form>
+  <p calendar = "message"></p>
+  <script>
+
+    function chkYears() {
+      let first = document.getElementByYear("first");
+      let second = document.getElementByMonth("second");
+      let third = document.getElementByDay("message");
+      let  fourth = document.getElementByAllMonth(calander);
+      if (first.value === "" || second.value==="") {
+		      message.innerHTML="You did not enter a year <br> Please enter one now";
+          message.style.color="red";
+          return false;
+      }
+      else if (first.value !== second.value) {
+          message.innerHTML="The four year years you entered are not the same <br> Please re-enter both now";
+          message.style.color="blue";
+          return false;
+      }
+      else{
+          message.innerHTML="Hooray! You have matched years!";
+          message.style.color="green";
+          return true;
+      }
+    }
+    // Register listeners
+    document.getElementByYear("submit").addEventListener('click',chkYars;
+  </script>
+</body>
