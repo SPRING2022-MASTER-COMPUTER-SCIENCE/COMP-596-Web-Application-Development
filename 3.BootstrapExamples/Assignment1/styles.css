@@ -1,0 +1,26 @@
+                .nav-Bissau {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 40px;
+                }
+                
+                .left-side {
+                    display: flex;
+                }
+                
+                .nav-Bissau>.left-side>div {
+                    margin-right: 20px;
+                    font-size: .9em;
+                }
+                
+                *.placeholder {
+                    background-color: green;
+                }
+                
+                .anotherClass {
+                    background-color: yellow;
+                }
+                
+                .another1Class {
+                    background-color: red;
+                }
